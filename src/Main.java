@@ -36,7 +36,7 @@ public class Main {
     public static void main(String[] args) {
         Aksjekurs aksjekurs = new Aksjekurs();
         Random random = new Random();
-        int arraySize = 1000000;
+        int arraySize = 200000;
         int[] kurs = new int[arraySize];
         int value = 0;
         for (int i = 0; i < arraySize; i++) {
@@ -49,7 +49,7 @@ public class Main {
 
         Long end = System.nanoTime();
 
-        System.out.println("lowest: " + result[0] + ". Highest: " + result[1] + "\n" +
+        System.out.println("lowest: " + result[0] + ". Highest: " + result[1] + " difference: " + result[2] + "\n" +
                 "Time: " +  (end - start));
     }
 }
